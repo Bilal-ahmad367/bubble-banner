@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+SK&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+
+}
+
+.banner {
+    background-color: #0053c9;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+.navigation img{
+    margin-top:10px;
+    width: 100%;
+}
+.bubble-banner{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.text-container{
+    padding: 0px 10px 0px 30px;
+    width: 50%;
+    color: #fff;
+    
+}
+.text-container h1{
+    font-weight: 500;
+}
+.text-container p{
+    margin-top: 20px;
+    font-weight: 300;
+
+}
+.baner-img {
+    width: 50%;
+}
+.baner-img img{
+    width: 100%;
+}
+
+/* moving squares */
+.moving-square{
+    position: absolute;
+  
+    bottom: 0;
+    background-color: rgba(255, 255, 255 , 0.3);
+    animation: moveUp 3s linear infinite ;
+    border-radius: 10%;
+    width: 60px;
+    height: 60px;
+   
+}
+.moving-square:nth-child(2){
+    left: 20%;
+    animation-duration: 6s;
+    width: 100px;
+    height: 100px;
+}
+.moving-square:nth-child(3){
+    left: 40%;
+    animation-duration: 7s;
+    width: 70px;
+    height: 70px;
+}
+.moving-square:nth-child(4){
+    left: 60%;
+    animation-duration: 6s;
+    width: 40px;
+    height: 40px;
+}
+.moving-square:nth-child(5){
+    left: 80%;
+    animation-duration: 8s;
+    width: 140px;
+    height: 140px;
+}
+.moving-square:nth-child(6){
+    left: 65%;
+    animation-duration: 8s;
+    width: 95px;
+    height: 95px;
+}
+@keyframes moveUp{
+0%{
+    bottom: -30%;
+    transform: rotate(0deg);
+}
+100%{
+    bottom: 100%;
+    transform: rotate(360deg);
+}
+}
+@media (max-width: 800px) {
+    .baner-img {
+       display: none;
+    }
+    .text-container{
+        width: 100%;
+    }
+}
